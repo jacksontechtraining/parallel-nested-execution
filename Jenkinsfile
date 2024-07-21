@@ -48,6 +48,7 @@ pipeline{
                             stage('nested stage A2'){
                                 steps{
                                     echo "Nested parallel execution"
+                                    bat 'go --version'
                                 }
                             }
                             stage('nested stage A3'){
