@@ -13,7 +13,7 @@ pipeline{
         }
 
         stage('Prallel Stage'){
-            fastFail true
+            failFast true
             parallel{
                 stage('parallel execution 1'){
                     steps{
