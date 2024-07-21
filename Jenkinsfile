@@ -16,13 +16,19 @@ pipeline{
             fastFail true
             parallel{
                 stage("parallel execution 1"){
-                    echo "parallel execution"
+                    steps{
+                        echo "parallel execution"
+                    }
                 }
                 stage("parallel execution 2"){
-                    echo "parallel execution"
+                    steps{
+                        echo "parallel execution"
+                    }
                 }
                 stage("parallel execution 3"){
-                    echo "parallel execution"
+                    steps{
+                        echo "parallel execution"
+                    }
                 }
             }
 
